@@ -2,12 +2,17 @@
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://saudiftikhaar.github.io/bookstore",
   "type": "module",
   "scripts": {
+    "start": "vite start",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+
   },
   "dependencies": {
     "axios": "^1.5.0",

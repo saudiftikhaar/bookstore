@@ -1,19 +1,30 @@
+{
+    "name": "frontend",
+    "private": true,
+    "version": "0.0.0",
+    "homepage": "https://saudiftikhaar.github.io/bookstore",
+    "type": "module",
 
-{ "name": "frontend",
-"private": true,
-"version": "0.0.0",
-"homepage": "https://saudiftikhaar.github.io/bookstore",
-"type": "module",
-
-
-  "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"},
-    "devDependencies": {
-    "gh-pages": "^6.1.1"
-  }
+    "scripts": {
+        "start": "vite start",
+        "dev": "vite",
+        "build": "npm build",
+        "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+        "preview": "vite preview",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    
+      },
+     
+"devDependencies":{
+    
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "vite": "^4.4.5",
+    "gh-pages":"^6.1.1"}
 }
-
- 

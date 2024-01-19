@@ -1,5 +1,17 @@
-{
-  "devDependencies": {
+
+{ "name": "frontend",
+"private": true,
+"version": "0.0.0",
+"homepage": "https://saudiftikhaar.github.io/bookstore",
+"type": "module",
+
+
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"},
+    "devDependencies": {
     "gh-pages": "^6.1.1"
   }
 }
